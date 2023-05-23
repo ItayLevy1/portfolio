@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+
+.imgContainer {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.headerImg {
+    height: 100vh;
+    z-index: -1;
+}
+
+.name {
+    position: absolute;
+    color: #324A51;
+}
+
+.name h2 {
+    z-index: 1;
+    letter-spacing: 2rem;
+}
+
+.name .first {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15rem;
+    text-transform: uppercase;
+}
+
+.name .last {
+    position: absolute;
+    bottom: -150px;
+    left: 100px;
+    font-size: 15rem;
+    text-transform: uppercase;
+}
+
+.position {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-top: 120px;
+    width: clamp(280px, 25vw, 450px);
+    left: 200px;
+}
+
+.position>div {
+    width: clamp(30px, 3vw, 70px);
+    height: 3px;
+    background-color: #D8F53C;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.position h2 {
+    letter-spacing: 2px;
+    font-size: clamp(25px, 1vw, 26px);
+    color: #D8F53C;
+}
+
+.section_title {
+    font-size: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    color: #324A51;
+}
+
+.section_title::after {
+    position: absolute;
+    top: -15px;
+    left: -100px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.294);
+    color: transparent;
+    letter-spacing: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .imgContainer {
+        top: 150px;
+    }
+
+    .headerImg {
+        height: 80vh;
+    }
+
+    .name {
+        position: relative;
+        bottom: 50px;
+    }
+    
+      .name h2 {
+        letter-spacing: 1rem;
+    }
+
+    .name .first {
+        font-size: 7rem;
+        bottom: 30%;
+        top: -350px;
+        right: -100px;
+    }
+
+    .name .last {
+        font-size: 7rem;
+        bottom: 30%;
+        top: -250px;
+        left: -100px;
+    }
+
+    .position {
+        bottom: 255px;
+        left: -100px;
+        margin: 50px 0 0 40px;
+    }
+
+    .position .last span {
+        display: inline-block;
+    }
+
+    .position>div {
+        margin-right: 10px;
+    }
+
+    .position h2 {
+        font-size: clamp(12px, 1vw, 26px);
+    }
+}
+
+
+
+/* section 2 */
+
+.about_me::after {
+    content: 'about me';
+}
+
+.about_img1_container {
+    margin-right: 200px;
+}
+
+.about_img2_container {
+    margin-left: 200px;
+}
+
+.myImg {
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.details {
+    position: relative;
+    top: -150px;
+    font-size: clamp(14px, 2vw, 20px);
+    font-family: 'Nunito', sans-serif;
+    color: #324A51;
+}
+
+.details h2 {
+    font-size: clamp(25px, 1.4vw, 20px);
+    color: #e4e4e4;
+}
+
+.details .bio {
+    max-width: 515px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.resume_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    font-size: 0.9rem;
+    color: #324A51;
+    margin-top: 6rem;
+    padding: 0.6rem 1rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    border: 2px solid #D8F53C;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(216, 245, 60, 0.4);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(216, 245, 60, 0.4),
+            transparent);
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section_title {
+        font-size: 20px;
+    }
+
+    .section_title::after {
+        left: -50px;
+    }
+
+    .details {
+        top: -80px;
+        font-size: clamp(16px, 2vw, 20px);
+    }
+
+    .details h2 {
+        font-size: clamp(25px, 1.4vw, 20px);
+    }
+
+    .details .bio {
+        width: 250px;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    .resume_container .btn {
+        top: 9rem;
+    }
+
+    .about_img1_container {
+        margin: 550px 0px 30px 100px;
+    }
+
+    .about_img2_container {
+        margin: 550px 100px 30px 0px;
+    }
+
+    .myImg {
+        height: 40vh;
+    }
+}
+
+
+/* section 3 */
+
+.skills {
+    top: 80px;
+}
+
+.skills::after {
+    content: 'my skills';
+}
+
+.skills_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* section 4 */
+
+.portfolio::after {
+    content: 'portfolio';
+}
+
+.portfolio_content {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 100px;
+}
+
+.portfolio_card {
+    right: 0;
+    padding: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    min-width: 280px;
+    color: white;
+}
+
+.count {
+    position: absolute;
+    font-size: 16px;
+    left: -20px;
+    top: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.portfolio_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_title h3 {
+    color: #D8F53C;
+    font-size: clamp(18px, 3vw, 35px);
+    letter-spacing: 5px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.project_img {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_img img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.portfolio_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .count {
+        left: 30px;
+        top: 0.5rem;
+    }
+
+    .portfolio_card {
+        top: 50px;
+    }
+
+    .project_img img {
+        width: 150px;
+        margin-bottom: 2rem;
+    }
+
+    .project_img {
+        width: 100%;
+        height: 30px;
+        padding-bottom: 20px;
+    }
+
+    .portfolio_title h3 {
+        margin: 20px 0 20px 0;
+    }
+
+    .portfolio_btn {
+        height: 10px;
+    }
+
+    .btn {
+        margin: 1rem;
+    }
+}
+
+
+
+/* section 5 */
+
+.art {
+    top: 150px;
+}
+
+.art::after {
+    content: 'art-work';
+}
+
+@media only screen and (max-width: 768px) {
+    .artwork {
+        margin: 1rem;
+    }
+}
+
+
+
+
+/* section 6 */
+
+.contact::after {
+    content: 'contact';
+}
+
+/* .contact_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+span {
+    display: flex;
+    flex-direction: row;
+}
+
+span>div {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    span {
+        flex-direction: column;
+    }
+}

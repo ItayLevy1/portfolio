@@ -1,0 +1,48 @@
+.skills_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills_progress {
+  transition: transform 0.5s ease-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%; 
+}
+
+.parallax_wrapper {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+}
+
+.skill_title {
+  font-size: 1.2rem;
+  color: #324A51;
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .skills_container {
+    height: 60vh;
+  }
+
+  .skills_progress {
+    width: 60%; 
+  }
+
+  .parallax_wrapper {
+    width: calc(50% - 20px);
+  }
+
+  .skill_title {
+    font-size: 0.6rem;
+  }
+}
