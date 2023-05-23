@@ -37,46 +37,46 @@ export default function Slider() {
 
             >
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art1.jpeg" alt="slide_image" />
+                    <img src="../img/artwork/art1.jpeg" alt="slide_image" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art2.jpeg" alt="slide_image" />
+                    <img src="../img/artwork/art2.jpeg" alt="slide_image" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art3.jpeg" alt="slide_image" />
+                    <img src="../img/artwork/art3.jpeg" alt="slide_image" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art4.jpeg" alt="slide_image" />
+                    <img src="../img/artwork/art4.jpeg" alt="slide_image" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art5.jpeg" alt="slide_image" />
+                    <img src="../img/artwork/art5.jpeg" alt="slide_image" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art6.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art6.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art7.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art7.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art8.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art8.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art9.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art9.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art10.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art10.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art11.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art11.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art12.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art12.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art13.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art13.jpeg" alt="slide_image"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="../src/img/artwork/art14.jpeg" alt="slide_image"/>
+                    <img src="../img/artwork/art14.jpeg" alt="slide_image"/>
                 </SwiperSlide>
 
                 <div className="slide-container">
