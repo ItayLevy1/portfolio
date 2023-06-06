@@ -344,6 +344,10 @@
     object-fit: contain;
 }
 
+.project_img img:hover {
+    filter: invert(100%) sepia(77%) saturate(900%) hue-rotate(23deg) brightness(108%) contrast(97%);
+}
+
 .portfolio_btn {
     display: flex;
     justify-content: center;

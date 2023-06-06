@@ -42,20 +42,23 @@ export default function Home() {
       imgSrc: projectImg
     },
     {
-      name: 'Project 2',
-      link: '#',
+      name: 'Flight Web',
+      link: 'https://github.com/ItayLevy1/flight-web',
+      linkSite: 'https://itaylevy1.github.io/flight-web/',
       imgSrc: projectImg
     },
     {
-      name: 'Project 3',
-      link: '#',
+      name: 'Portfolio',
+      link: 'https://github.com/ItayLevy1/portfolio',
+      linkSite: 'https://itaylevy1.github.io/portfolio/',
       imgSrc: projectImg
     },
-    {
-      name: 'Project 4',
-      link: '#',
-      imgSrc: projectImg
-    }
+    // {
+    //   name: 'Project 4',
+    //   link: '#',
+    //   linkSite: '#',
+    //   imgSrc: projectImg
+    // }
   ];
 
   const handleContactClick = (url) => {
