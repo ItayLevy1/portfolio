@@ -16,7 +16,7 @@ import {
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import { BsInstagram, BsBehance } from 'react-icons/bs';
-import { FiMail, FiGithub, FiLinkedin } from 'react-icons/Fi';
+import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi';
 
 import './style.css';
 import SkillsBar from '../../components/CircularProgressBar/CircularProgressBar.jsx';
@@ -94,7 +94,7 @@ export default function Home() {
         </Animator>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
           <div className="imgContainer">
-            <img src={headerImg} alt="headerImg" className='headerImg'/>
+            <img src={headerImg} alt="headerImg" className='headerImg' />
           </div>
         </Animator>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(-100, 100))}>
@@ -125,7 +125,7 @@ export default function Home() {
       <ScrollPage page={2}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(-1000, 0))}>
           <div className="about_img1_container ">
-            <img src={aboutImg1} alt="myImg" className='myImg'/>
+            <img src={aboutImg1} alt="myImg" className='myImg' />
           </div>
         </Animator>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(400, 0))}>
@@ -134,16 +134,14 @@ export default function Home() {
               Hi, I'm <span style={{ color: '#D8F53C', display: 'inline-block' }}>Itay Levy</span>
             </h2>
             <p className="bio">
-              25 y/o, bachelor's degree in Digital Media at Tel-Aviv University and FullStack Developer at TESI.
-            </p>
+              A FullStack Developer with a bachelor's degree in Digital Media from Tel-Aviv University.            </p>
             <p className="bio">
-              I'm an artist that has been involved in painting and art since the age of 8. In addition, I have a shoe and clothing design business. I live the virtual world, and create personal content on Instagram, Facebook and Tiktok. Always looking for the next cool thing. I wait for my dream job that will be a springboard to develop professionally and learn more for me.
-            </p>
+              Alongside my passion for coding, I have nurtured my artistic talents since the age of 8, specializing in painting and other forms of art. Additionally, I founded my own shoe and clothing design business. My fascination with the virtual world has led me to create engaging content on Instagram, Facebook, and TikTok. I am always seeking the next exciting challenge and eagerly anticipate my dream job, which will serve as a springboard for my professional development and continuous learning.            </p>
           </div>
         </Animator>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 0))}>
           <div className="about_img2_container ">
-            <img src={aboutImg2} alt="myImg" className='myImg'/>
+            <img src={aboutImg2} alt="myImg" className='myImg' />
           </div>
         </Animator>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, 500))}>
@@ -251,30 +249,30 @@ export default function Home() {
               <Animator animation={MoveIn(-1000, 0)}>
                 <div className="contact_details"
                   onClick={() => handleContactClick('https://www.instagram.com/itaylevy2/')}>
-                  <BsInstagram size={38} color='#D8F53C' cursor='pointer' className='contact_icons' />
+                  <BsInstagram size={38} className='contact_icon' />
                 </div>
               </Animator>
               <Animator animation={MoveOut(1000, 0)}>
                 <div className="contact_details"
                   onClick={() => handleContactClick('https://www.behance.net/itaylevy1')}>
-                  <BsBehance color='#D8F53C' cursor='pointer' className='contact_icons' />
+                  <BsBehance className='contact_icon' />
                 </div>
               </Animator>
               <Animator animation={MoveOut(-1000, 0)}>
                 <div className="contact_details"
                   onClick={() => handleContactClick('https://github.com/ItayLevy1')}>
-                  <FiGithub color='#D8F53C' cursor='pointer' className='contact_icons' />
+                  <FiGithub className='contact_icon' />
                 </div>
               </Animator>
               <Animator animation={MoveOut(1000, 0)}>
                 <div className="contact_details"
                   onClick={() => handleContactClick('https://www.linkedin.com/in/itaylevy2/')}>
-                  <FiLinkedin color='#D8F53C' cursor='pointer' className='contact_icons' />
+                  <FiLinkedin className='contact_icon' />
                 </div>
               </Animator>
               <Animator animation={MoveIn(1000, 0)}>
                 <div className="contact_details">
-                  <a href="mailto:iti307@gmail.com"><FiMail color='#D8F53C' className='contact_icons' /></a>
+                  <a href="mailto:iti307@gmail.com"><FiMail className='contact_icon' /></a>
                 </div>
               </Animator>
             </span>

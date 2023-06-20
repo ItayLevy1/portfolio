@@ -19,6 +19,8 @@
 }
 
 .skill_title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
   font-size: 1.2rem;
   color: #324A51;
   text-transform: uppercase;
@@ -26,6 +28,20 @@
   text-align: center;
   justify-content: center;
   padding: 10%;
+}
+
+
+.circular_progressbar_container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #324A51;
 }
 
 
@@ -43,6 +59,10 @@
   }
 
   .skill_title {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 30px;
   }
 }
