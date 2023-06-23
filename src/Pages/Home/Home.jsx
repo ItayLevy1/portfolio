@@ -13,6 +13,12 @@ import {
   MoveIn,
 } from 'react-scroll-motion';
 
+import Lottie from 'lottie-react';
+
+import flightWebLogo from '../../img/flightWebLogo.json';
+import portfolioLogo from '../../img/portfolioLogo.json';
+import weatherLogo from '../../img/weatherLogo.json';
+
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import { BsInstagram, BsBehance } from 'react-icons/bs';
@@ -39,19 +45,22 @@ export default function Home() {
       name: 'Weather App',
       link: 'https://github.com/ItayLevy1/weather-app',
       linkSite: 'https://itaylevy1.github.io/weather-app/',
-      imgSrc: projectImg
+      imgSrc: projectImg,
+      logo: weatherLogo
     },
     {
       name: 'Flight Web',
       link: 'https://github.com/ItayLevy1/flight-web',
       linkSite: 'https://itaylevy1.github.io/flight-web/',
-      imgSrc: projectImg
+      imgSrc: projectImg,
+      logo: flightWebLogo
     },
     {
       name: 'Portfolio',
       link: 'https://github.com/ItayLevy1/portfolio',
       linkSite: 'https://itaylevy1.github.io/portfolio/',
-      imgSrc: projectImg
+      imgSrc: projectImg,
+      logo: portfolioLogo
     },
     // {
     //   name: 'Project 4',
@@ -198,7 +207,7 @@ export default function Home() {
                         </h3>
                       </div>
                       <div className="count">
-                        {index + 1}
+                        <Lottie loop={true} animationData={work?.logo} className='logoApp'></Lottie>
                       </div>
                       <div className="portfolio_btn">
                         <a href={work?.linkSite} target='_blank' className='btn'> Live Preview </a>

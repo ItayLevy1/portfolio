@@ -314,15 +314,6 @@
     color: white;
 }
 
-.count {
-    position: absolute;
-    font-size: 16px;
-    left: -20px;
-    top: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
 .portfolio_title {
     display: flex;
     flex-direction: column;
@@ -340,12 +331,21 @@
     margin-top: 10px;
 }
 
+.count {
+    position: absolute;
+    top: 0; /* Position it at the vertical center */
+    left: 50%; /* Position it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    z-index: 1; /* Ensure it appears above the image */
+}
+
 .project_img {
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative; /* Add position relative */
 }
 
 .project_img img {
@@ -365,9 +365,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .portfolio_card {
+        margin: 1rem;
+    }
+
     .count {
-        left: 30px;
-        top: 0.5rem;
+        bottom: 1rem;
+        padding: 3rem;
     }
 
     .portfolio_card {
@@ -430,7 +434,7 @@
     left: -20px;
 }
 
-/* .contact_container{
+.contact_container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,7 +445,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 span {
     display: flex;
@@ -449,7 +453,7 @@ span {
 }
 
 span>div {
-    margin: 20px;
+    margin: 30px;
 }
 
 .contact_icon {

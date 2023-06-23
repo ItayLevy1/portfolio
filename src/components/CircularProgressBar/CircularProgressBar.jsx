@@ -15,7 +15,7 @@ const SkillsBar = () => {
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setProgress([100, 100, 95, 90, 85, 80, 80, 70]); // Set the desired progress value when the component enters the viewport
+          setProgress([80, 80, 65, 60, 85, 80, 80, 70]); // Set the desired progress value when the component enters the viewport
         } else {
           setProgress([0, 0, 0, 0, 0, 0, 0, 0]); // Reset the progress value when the component is not visible
         }
