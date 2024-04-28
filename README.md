@@ -18,3 +18,5 @@ Contact and Inquiry Form: The Portfolio template provides a contact section wher
 Social Media Integration: The project supports integration with various social media platforms, enabling you to showcase your online presence and connect with visitors through your preferred social channels. This feature enhances your visibility and allows visitors to engage with your work and updates.
 
 Search Engine Optimization (SEO): The Portfolio template is designed with SEO best practices in mind. It includes meta tags, structured data, and other optimization techniques to improve the visibility and discoverability of your portfolio website in search engine results.
+
+# <a href="https://itaylevy1.github.io/portfolio/">live web</a>
