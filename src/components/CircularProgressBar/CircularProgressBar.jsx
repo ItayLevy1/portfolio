@@ -2,8 +2,8 @@ import '../../components/CircularProgressBar/CircularProgressBar.css';
 import React, { useState, useEffect, useRef } from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { TbBrandHtml5, TbBrandCss3, TbBrandReact, TbBrandJavascript, } from 'react-icons/tb';
-import { SiAdobephotoshop, SiAdobeillustrator, SiAdobexd, SiAdobeindesign } from 'react-icons/si';
+import { TbBrandHtml5, TbBrandCss3, TbBrandReact, TbBrandJavascript, TbBrandFigma} from 'react-icons/tb';
+import { SiAdobephotoshop, SiAdobeillustrator, SiAdobexd } from 'react-icons/si';
 
 
 const SkillsBar = () => {
@@ -15,7 +15,7 @@ const SkillsBar = () => {
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setProgress([80, 80, 65, 60, 85, 80, 80, 70]); // Set the desired progress value when the component enters the viewport
+          setProgress([80, 80, 65, 60, 85, 70, 80, 80]); // Set the desired progress value when the component enters the viewport
         } else {
           setProgress([0, 0, 0, 0, 0, 0, 0, 0]); // Reset the progress value when the component is not visible
         }
@@ -153,9 +153,9 @@ const SkillsBar = () => {
                 backgroundColor: '#3e98c7',
               })}
             />
-            <SiAdobeindesign size={45} className="icon" />
+            <TbBrandFigma size={50} className="icon" />
           </div>
-          <h1 className="skill_title">adobe id</h1>
+          <h1 className="skill_title">figma</h1>
         </div>
       </div>
     </div>

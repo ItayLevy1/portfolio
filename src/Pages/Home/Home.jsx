@@ -184,39 +184,28 @@ export default function Home() {
 
       <ScrollPage page={4}>
         <Animator animation={ZoomInScrollOut}>
-          <div className="section_title portfolio">
-            Portfolio
-          </div>
+          <div className="section_title portfolio">Portfolio</div>
         </Animator>
       </ScrollPage>
 
       <ScrollPage page={5}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
           <div className="portfolio_content">
-            {
-              work?.map((work, index) => {
-                return (
-                  <a href={work?.link} target='_blank' key={work?.name}>
-                    <div className="portfolio_card">
-                      <div className="project_img">
-                        <img src={work?.imgSrc} alt={work?.name} />
-                      </div>
-                      <div className="portfolio_title">
-                        <h3>
-                          {work?.name}
-                        </h3>
-                      </div>
-                      <div className="count">
-                        <Lottie loop={true} animationData={work?.logo} className='logoApp'></Lottie>
-                      </div>
-                      <div className="portfolio_btn">
-                        <a href={work?.linkSite} target='_blank' className='btn'> Live Preview </a>
-                      </div>
-                    </div>
-                  </a>
-                )
-              })
-            }
+            {work && work.map((item, index) => (
+              <a href={item.link} target='_blank' key={item.name} className="portfolio_card_link">
+                <div className="portfolio_card">
+                  <div className="project_img">
+                    <img src={item.imgSrc} alt={item.name} />
+                  </div>
+                  <div className="portfolio_title">
+                    <h3>{item.name}</h3>
+                  </div>
+                  <div className="portfolio_btn">
+                    <a href={item.linkSite} target='_blank' className='btn'> Live Preview </a>
+                  </div>
+                </div>
+              </a>
+            ))}
           </div>
         </Animator>
       </ScrollPage>
