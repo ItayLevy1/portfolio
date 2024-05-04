@@ -143,9 +143,11 @@ export default function Home() {
               Hi, I'm <span style={{ color: '#D8F53C', display: 'inline-block' }}>Itay Levy</span>
             </h2>
             <p className="bio">
-              A FullStack Developer with a bachelor's degree in Digital Media from Tel-Aviv University.            </p>
+              A FullStack Developer with a Bachelor's degree in Digital Media from Tel-Aviv University and additional expertise in UI/UX Design.
+            </p>
             <p className="bio">
-              Alongside my passion for coding, I have nurtured my artistic talents since the age of 8, specializing in painting and other forms of art. Additionally, I founded my own shoe and clothing design business. My fascination with the virtual world has led me to create engaging content on Instagram, Facebook, and TikTok. I am always seeking the next exciting challenge and eagerly anticipate my dream job, which will serve as a springboard for my professional development and continuous learning.            </p>
+              I have cultivated a passion for both coding and the arts since childhood, specializing in painting and launching my own shoe and clothing design business. With a strong presence on Instagram, Facebook, and TikTok, I engage audiences by merging creativity with digital experiences. Eager for new challenges, I am actively seeking a role that will catalyze my professional growth and lifelong learning.
+            </p>
           </div>
         </Animator>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 0))}>
